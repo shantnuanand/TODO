@@ -1,5 +1,5 @@
 Todo Application
-This is a simple todo application built with [framework/library name] to help you manage your tasks efficiently.
+This is a simple todo application built with React+Vite to help you manage your tasks efficiently.
 
 Prerequisites
 Before you begin, ensure you have met the following requirements:
@@ -13,7 +13,7 @@ Clone this repository to your local machine:
 
 bash
 Copy code
-git clone https://github.com/your-username/todo-app.git
+Clone the repository
 Navigate to the project directory:
 
 bash
