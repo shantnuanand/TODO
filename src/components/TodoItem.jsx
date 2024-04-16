@@ -4,9 +4,9 @@ import { useDispatch } from "react-redux";
 
 const TodoItem = ({ id, title, completed }) => {
   const dispatch = useDispatch();
-  const [modalOpen, setModalOpen] = useState(false);
+  const [modalOpen, setModalOpen] = useState(false); //used modal to view the data in the list item
 
-  const handleCompleted = () => {
+  const handleCompleted = () => { //function to handle the checkbox is checked or not
     dispatch(
       toggleComplete({
         id: id,
@@ -15,7 +15,7 @@ const TodoItem = ({ id, title, completed }) => {
     );
   };
 
-  const handleDelete = () => {
+  const handleDelete = () => { //function to delete the to using dispatch function
     dispatch(deleteTodo({ id: id }));
   };
 

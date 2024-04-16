@@ -3,17 +3,17 @@ import { useDispatch } from "react-redux";
 import { addTodo } from "../redux/todoSlice";
 
 const TaskInput = () => {
-  const dispatch = useDispatch();
-  const [value, setValue] = useState("");
+  const dispatch = useDispatch(); //to dispatch the data to the store
+  const [value, setValue] = useState(""); // to obtain the data from input
   const onSubmit = (e) => {
     e.preventDefault();
-    dispatch(
+    dispatch( //dispatching the title to the action and storing on the redux store
       addTodo({
         title: value,
       })
     );
-    console.log(value);
-    setValue("");
+    // console.log(value);
+    setValue(""); //setting the input value again to null
   };
 
   return (

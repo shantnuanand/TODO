@@ -1,7 +1,7 @@
 import React from "react";
-import TaskInput from "../components/TaskInput";
-import TaskList from "../components/TaskList";
-import Total from "../components/Total";
+import TaskInput from "../components/TaskInput"; //component for adding a new task.
+import TaskList from "../components/TaskList"; //component for displaying the list of tasks.
+import Total from "../components/Total"; //component for displaying the total nos. of task completed
 
 const Home = () => {
   return (
@@ -14,11 +14,8 @@ const Home = () => {
         <div className="flex flex-col gap-2">
           <TaskList />
         </div>
-        <div className="flex items-center justify-between px-2">
-          <Total/>
-          <button className="bg-purple-600 hover:bg-purple-800 text-white py-2 px-4 rounded-sm">
-            Clear All
-          </button>
+        <div className="flex items-center justify-center px-2">
+          <Total />
         </div>
       </div>
     </div>
